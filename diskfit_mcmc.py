@@ -12,7 +12,7 @@ basedir = os.environ["PWD"]  # the base directory where is
 # your data (using OS environnement variable allow to use same code on
 # different computer without changing this).
 
-default_parameter_file = 'GPI_Hband_MCMC_ADI_4796.yaml'  # name of the parameter file
+default_parameter_file = 'GPI_Hband_MCMC_ADI_4796.yaml'  # name of the parameter file. Assumes parameter file is in a directory called "initialization_files"
 # you can also call it with the python function argument -p
 
 MPI = False  ## by default the MCMC is not mpi. you can change it
