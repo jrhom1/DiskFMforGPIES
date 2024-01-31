@@ -30,7 +30,7 @@ import sys
 import glob
 #This is for overriding environment-installed paths for packages, if you need to do that.
 #sys.path.insert(1,'/home/jrhom/pyklip/')
-#sys.path.insert(0,'/home/jrhom/anadisk_model/')
+sys.path.insert(0,'/home/jrhom/anadisk_model/')
 
 import distutils.dir_util
 import warnings
@@ -752,6 +752,8 @@ def initialize_mask_psf_noise(params_mcmc_yaml, quietklip=True):
                                     file_prefix + '_mask2generatedisk.fits'),
                         mask2generatedisk,
                         overwrite='True')
+
+        #NOTE: In many cases, you will need to fine-tune/customize how your mask looks depending on your data
 
         mask_disk_zeros = gpidiskpsf.make_disk_mask(
             dataset.input.shape[1],

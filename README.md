@@ -25,7 +25,19 @@ pyKLIP
 schwimmbad
 
 # Other Necessary Items
-These scripts assume that you have a directory containing a GPI spectral mode dataset. There is functionality for polarimetric mode datasets, but they are not specifically supported in these scripts (but will be in the future). These scripts often rely on each other, so make sure you are referencing paths to scripts correctly. File and directory referencing will be improved for the future.
+These scripts assume that you have a directory containing a GPI spectral mode dataset. There is functionality for polarimetric mode datasets, but they are not specifically supported in these scripts (but can be in the future). These scripts often rely on each other, so make sure you are referencing paths to scripts correctly. File and directory referencing will be improved for the future.
+
+# Additional Information
+These scripts contain functionality not utilized in Hom et al. (2024), including the use of reference differential imaging, Henyey-Greenstein phase functions, and manipulation of SPHERE and polarimetric datasets. These functionalities have not been tested with updated model frameworks, but remain so that users can experiment and develop these functionalities if they wish.
+
+# Simple guide on how to do a disk analysis
+1. Check over information in your yaml parameter file. This will contain all information relevant to generating your model, performing the PSF subtraction, initializing your MCMC, and displaying the results of your analysis. An example parameter file is in this repository.
+
+2. The MCMC analysis is run from diskfit_mcmc.py. In this script, you may need to manually adjust certain values, including fixed parameters, file paths for data directories, parameter files, masks, and a fixed SPF file. Make sure your filepath to reference anadisk_model is also accurate.
+
+3. MCMC results are generated from plotfrombackend_mcmc.py. This script contains functions that generate chain plots, corner plots, maximum likelihood model plots, and the files associated with maximum likelihood models (residual maps, maximum likelihood model, etc.). Again, check that filepaths for parameter files, masks, and SPFs are referenced correctly.
+
+If you are stuck or confused on any aspects of this process, don't hesitate to open an issue or send me an email (jrhom@arizona.edu)
 
 # Acknowledgement and Citation
 

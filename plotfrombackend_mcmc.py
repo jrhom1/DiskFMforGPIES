@@ -6,7 +6,7 @@ import sys
 import os
 #Use these to override enivornment-path packages
 #sys.path.insert(0,'/home/jrhom/pyklip/')
-#sys.path.insert(0,'/home/jrhom/anadisk_model')
+sys.path.insert(0,'/home/jrhom/anadisk_model')
 basedir = os.environ["PWD"]  # the base directory where is
 # your data (using OS environnement variable allow to use same code on
 # different computer without changing this).
