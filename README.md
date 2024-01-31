@@ -49,6 +49,8 @@ Mazoyer, J., Arriaga, P., Hom, J., et al., 2020, Proceedings of the SPIE, 11447E
 
 Millar-Blanchaer, M.A., Wang, J.J., Kalas, P., et al., 2016, The Astronomical Journal, 152, 128M -- if using anadisk_model in general
 
+Wang, J.J., Ruffio, J.-B., De Rosa, R.J., et al., 2015, 2015ascl.soft06001W -- if using pyKLIP
+
 If using the generic SPF as generated in Hom et al. (2024), please cite:
 
 Hedman, M.M. & Stark, C.C., 2015, The Astrophysical Journal, 811, 67H
