@@ -1,7 +1,33 @@
 # DiskFM for GPIES
-A modified packaging of usable functions and tools from DiskFM (Mazoyer et al. 2020) (https://ui.adsabs.harvard.edu/abs/2020SPIE11447E..59M/abstract).
+A modified packaging of usable functions and tools from DiskFM (Mazoyer et al. 2020) (https://ui.adsabs.harvard.edu/abs/2020SPIE11447E..59M/abstract) specifically applied for GPI imaging data.
 
-This repository contains relevant python scripts and functions for Hom et al. (2024) (Accepted for publication in MNRAS). This includes the backend disk model modified from anadisk_model (Millar-Blanchaer et al. 2016; https://ui.adsabs.harvard.edu/abs/2016AJ....152..128M/abstract) and the generic SPF utilized in Hom et al. (2024).
+This repository contains relevant python scripts and functions for Hom et al. (2024) (Accepted for publication in MNRAS). This includes the backend disk model modified from anadisk_model (Millar-Blanchaer et al. 2016; https://ui.adsabs.harvard.edu/abs/2016AJ....152..128M/abstract) and the generic SPF utilized in Hom et al. (2024). For the HR 4796A SPF measured in Milli et al. (2017), please contact Julien Milli.
+
+This repository is continually updated, and Jupyter notebooks will be added to guide users in a step-by-step process in the near future.
+
+# Dependencies
+numpy
+
+matplotlib
+
+astropy
+
+yaml
+
+numba
+
+scipy
+
+emcee
+
+pyKLIP
+
+schwimmbad
+
+# Other Necessary Items
+These scripts assume that you have a directory containing a GPI spectral mode dataset. There is functionality for polarimetric mode datasets, but they are not specifically supported in these scripts (but will be in the future). These scripts often rely on each other, so make sure you are referencing paths to scripts correctly. File and directory referencing will be improved for the future.
+
+# Acknowledgement and Citation
 
 If you use this repository in your own analysis, please cite:
 
